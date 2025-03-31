@@ -1,0 +1,145 @@
+/* Дополнительные стили для Bootstrap */
+body.light-theme {
+    background-color: #ffffff !important; /* Основной фон для светлой темы */
+    color: #212529 !important; /* Черный текст для светлой темы */
+}
+
+body.dark-theme {
+    background-color: #212529 !important; /* Основной фон для темной темы */
+    color: #ffffff !important; /* Белый текст для темной темы */
+}
+
+body.light-theme header {
+    background-color: rgba(255, 255, 255, 0.8) !important; /* Хедер в светлой теме */
+}
+
+body.dark-theme header {
+    background-color: rgba(33, 37, 41, 0.75) !important; /* Хедер в темной теме */
+}
+
+/* Переопределение фона секций */
+body.light-theme #hero {
+    background: linear-gradient(to bottom right, #f8f9fa, #e9ecef) !important; /* Hero в светлой теме */
+}
+
+body.dark-theme #hero {
+    background: linear-gradient(to bottom right, #343a40, #212529) !important; /* Hero в темной теме */
+}
+
+body.light-theme #services,
+body.light-theme #about,
+body.light-theme #contacts {
+    background-color: #ffffff !important; /* Фон услуг, "Обо мне" и контактов в светлой теме */
+}
+
+body.dark-theme #services,
+body.dark-theme #about,
+body.dark-theme #contacts {
+    background-color: #212529 !important; /* Фон услуг, "Обо мне" и контактов в темной теме */
+}
+
+body.light-theme #portfolio,
+body.light-theme #reviews {
+    background-color: #f8f9fa !important; /* Фон портфолио и отзывов в светлой теме */
+}
+
+body.dark-theme #portfolio,
+body.dark-theme #reviews {
+    background-color: #6c757d !important; /* Фон портфолио и отзывов в темной теме */
+}
+
+/* Карточки и формы */
+body.light-theme .card.bg-secondary,
+body.light-theme .form-control.bg-secondary {
+    background-color: #e9ecef !important;
+    color: #212529 !important; /* Черный текст для читаемости */
+}
+
+body.dark-theme .card.bg-secondary,
+body.dark-theme .form-control.bg-secondary {
+    background-color: #6c757d !important;
+    color: #ffffff !important; /* Белый текст для темной темы */
+}
+
+body.light-theme .card.bg-dark {
+    background-color: #343a40 !important; /* Карточки портфолио в светлой теме */
+}
+
+body.dark-theme .card.bg-dark {
+    background-color: #343a40 !important; /* Карточки портфолио в темной теме */
+}
+
+/* Навигация */
+body.light-theme .nav-link {
+    color: #212529 !important; /* Черный цвет ссылок в светлой теме */
+}
+
+body.dark-theme .nav-link {
+    color: #ffffff !important; /* Белый цвет ссылок в темной теме */
+}
+
+body.light-theme .nav-link:hover {
+    color: #0d6efd !important; /* Синий при наведении в светлой теме */
+}
+
+body.dark-theme .nav-link:hover {
+    color: #66b0ff !important; /* Светло-синий при наведении в темной теме */
+}
+
+/* Кнопки */
+body.light-theme .btn-primary {
+    background-color: #0d6efd !important;
+    color: #ffffff !important;
+}
+
+body.light-theme .btn-primary:hover {
+    background-color: #0056b3 !important;
+}
+
+body.dark-theme .btn-primary {
+    background-color: #0d6efd !important;
+    color: #ffffff !important;
+}
+
+body.dark-theme .btn-primary:hover {
+    background-color: #66b0ff !important;
+}
+
+/* Ссылка Telegram */
+body.light-theme #contacts a {
+    color: #0d6efd !important; /* Синий цвет ссылки в светлой теме */
+}
+
+body.dark-theme #contacts a {
+    color: #66b0ff !important; /* Светло-синий в темной теме */
+}
+
+/* Карусель */
+body.light-theme .carousel-control-prev-icon,
+body.light-theme .carousel-control-next-icon {
+    filter: invert(1); /* Черные стрелки в светлой теме */
+}
+
+body.dark-theme .carousel-control-prev-icon,
+body.dark-theme .carousel-control-next-icon {
+    filter: none; /* Белые стрелки в темной теме */
+}
+
+/* Параллакс для Hero */
+#hero {
+    background-attachment: fixed;
+}
+
+/* Ховер-эффект для карточек */
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Кастомный курсор (опционально) */
+body {
+    cursor: url('cursor.png'), auto;
+}
