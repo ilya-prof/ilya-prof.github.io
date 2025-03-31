@@ -7,10 +7,17 @@ AOS.init({
 // Переключатель темы
 const themeSwitch = document.getElementById('theme-switch');
 themeSwitch.addEventListener('click', () => {
-    document.body.classList.toggle('light-theme');
-    document.body.classList.toggle('dark-theme');
-    themeSwitch.textContent = document.body.classList.contains('dark-theme') ? '🌙' : '☀️';
-    localStorage.setItem('theme', document.body.classList.contains('dark-theme') ? 'dark' : 'light');
+    if (document.body.classList.contains('dark-theme')) {
+        document.body.classList.remove('dark-theme');
+        document.body.classList.add('light-theme');
+        themeSwitch.textContent = '☀️'; // Светлая тема
+        localStorage.setItem('theme', 'light');
+    } else {
+        document.body.classList.remove('light-theme');
+        document.body.classList.add('dark-theme');
+        themeSwitch.textContent = '🌙'; // Темная тема
+        localStorage.setItem('theme', 'dark');
+    }
 });
 
 // Загрузка сохраненной темы
@@ -23,10 +30,10 @@ const form = document.getElementById('contact-form');
 form.addEventListener('submit', async (e) => {
     e.preventDefault();
     const formData = new FormData(form);
-    const token = 'YOUR_TELEGRAM_BOT_TOKEN'; // Замените на ваш токен
-    const chatId = 'YOUR_CHAT_ID'; // Замените на ваш chat_id
+    const token = '7071248616:AAGhCGeGkhtnVqymj8n9H_PhK_6D8R5asLw'; // Замените на ваш токен
+    const chatId = 1690425469; // Замените на ваш chat_id
 
-    const message = `Имя: ${formData.get('name')}\nEmail: ${formData.get('email')}\nСообщение: ${formData.get('message')}`;
+    const message = `Имя: ${formData.get('name')}\nТелефон: ${formData.get('phone')}\nСообщение: ${formData.get('message')}`;
     try {
         await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
             method: 'POST',

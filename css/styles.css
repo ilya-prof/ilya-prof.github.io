@@ -141,5 +141,5 @@ body.dark-theme .carousel-control-next-icon {
 
 /* Кастомный курсор (опционально) */
 body {
-    cursor: url('cursor.png'), auto;
+    cursor: url('/pic/cursor.png'), auto;
 }
