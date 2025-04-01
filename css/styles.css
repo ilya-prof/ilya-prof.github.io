@@ -138,6 +138,16 @@ body.dark-theme .carousel-control-next-icon {
 .card:hover {
     transform: scale(1.05);
 }
+/* Исправляем тему на прайсе */
+body.light-theme .accordion-body {
+    background-color: #f8f9fa !important;
+    color: #212529 !important;
+}
+
+body.dark-theme .accordion-body {
+    background-color: #343a40 !important;
+    color: #ffffff !important;
+}
 
 /* Кастомный курсор (опционально) */
 body {

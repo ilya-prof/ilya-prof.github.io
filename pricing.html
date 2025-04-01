@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Прайс на услуги - Фрилансер Илья</title>
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="css/aos.css" rel="stylesheet">
+    <!-- Кастомные стили -->
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body class="dark-theme">
+    <!-- Хедер -->
+    <header class="fixed-top bg-dark bg-opacity-75">
+        <nav class="container py-3 d-flex justify-content-between align-items-center">
+            <ul class="nav">
+                <li class="nav-item"><a href="index.html" class="nav-link">Главная</a></li>
+                <li class="nav-item"><a href="pricing.html" class="nav-link">Прайс</a></li>
+            </ul>
+            <button id="theme-switch" class="btn btn-link fs-3">🌙</button>
+        </nav>
+    </header>
+
+    <!-- Основной контент -->
+    <section id="pricing" class="py-5 container min-vh-100">
+        <h1 class="display-5 fw-bold text-center mb-5" data-aos="fade-up">Прайс на услуги</h1>
+        
+        <!-- Аккордеон для ботов -->
+        <div class="accordion mb-5" id="botsAccordion" data-aos="fade-up" data-aos-delay="100">
+            <div class="accordion-item bg-secondary">
+                <h2 class="accordion-header"  id="botsHeading">                       <button class="accordion-button bg-secondary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#botsCollapse" aria-expanded="true" aria-controls="botsCollapse" style="font-size:2rem;">
+                        Боты
+                    </button>
+                </h2>
+                <div id="botsCollapse" class="accordion-collapse collapse show" aria-labelledby="botsHeading" data-bs-parent="#botsAccordion">
+                    <div class="accordion-body">
+                        <h3>Чат-боты для соцсетей и мессенджеров (Telegram, ВКонтакте, WhatsApp)</h3>
+                        <ul class="list-unstyled">
+                            <li>Простой бот (шаблонные ответы, кнопки, база FAQ) – <strong>5 000 – 10 000 ₽</strong></li>
+                            <li>Средней сложности (интеграция с API, оплата, CRM) – <strong>10 000 – 20 000 ₽</strong></li>
+                            <li>Сложный бот (AI, NLP, сложная логика, базы данных) – <strong>20 000 – 30 000 ₽</strong></li>
+                        </ul>
+                        <h3>AI-боты с NLP (нейросетевые, ChatGPT-like)</h3>
+                        <ul class="list-unstyled">
+                            <li>На базе GPT/LLM (ChatGPT API, Claude, Gemini, DeepSeek) – <strong>от 10 000 ₽</strong></li>
+                            <li>Кастомизированный AI (обучение на своих данных) – <strong>от 30 000 ₽</strong></li>
+                            <li>Голосовые боты (Telegram, call-центры) – <strong>от 30 000 ₽</strong></li>
+                        </ul>
+                        <h3>Боты для бизнеса (CRM, автоматизация)</h3>
+                        <ul class="list-unstyled">
+                            <li>Бот для заказов/доставки – <strong>30 000 – 50 000 ₽</strong></li>
+                            <li>Бот-ассистент (поддержка клиентов) – <strong>20 000 – 50 000 ₽</strong></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Аккордеон для парсинга -->
+        <div class="accordion mb-5" id="parsingAccordion" data-aos="fade-up" data-aos-delay="200">
+            <div class="accordion-item bg-secondary">
+                <h2 class="accordion-header" id="parsingHeading">
+                    <button class="accordion-button bg-secondary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#parsingCollapse" aria-expanded="true" aria-controls="parsingCollapse" style="font-size:2rem;">
+                        Парсинг
+                    </button>
+                </h2>
+                <div id="parsingCollapse" class="accordion-collapse collapse show" aria-labelledby="parsingHeading" data-bs-parent="#parsingAccordion">
+                    <div class="accordion-body">
+                        <h3>Парсеры и автономные боты</h3>
+                        <ul class="list-unstyled">
+                            <li>Парсинг данных (Telegram, сайты) – <strong>5 000 – 10 000 ₽</strong></li>
+                            <li>Торговые боты (крипто, маркетплейсы) – <strong>от 10 000 ₽</strong></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Дополнительные расходы -->
+        <div class="card bg-secondary p-4" data-aos="fade-up" data-aos-delay="300">
+            <h2 class="h4 mb-3">Дополнительные расходы</h2>
+            <ul class="list-unstyled">
+                <li>Разработка ТЗ – <strong>500 ₽</strong> (оплачивается авансом)</li>
+                <li>Хостинг, обслуживание VPS (RU/EU/US) – <strong>500 – 1 000 ₽/мес.</strong></li>
+                <li>Платное API (OpenAI, SMS, платежи) – <strong>зависит от нагрузки</strong></li>
+                <li>Техподдержка, консультации – <strong>1 000 ₽/час (мин. 500 ₽)</strong></li>
+            </ul>
+            <h2 class="h4 mt-4 mb-3">Бесплатно</h2>
+            <ul class="list-unstyled">
+                <li>Покупка VDS и первичная настройка (Timeweb.cloud)</li>
+                <li>Настройка и отладка в течение 7 дней после сдачи работы</li>
+            </ul>
+        </div>
+
+        <!-- Уточнение -->
+        <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="400">
+            <p class="lead">Если нужен точный расчет под ваш проект, уточните:</p>
+            <ul class="list-unstyled">
+                <li>Какой мессенджер/платформа?</li>
+                <li>Нужен ли AI или хватит кнопок?</li>
+                <li>Интеграции с CRM/платежами?</li>
+                <li>Парсинг или автоответчик?</li>
+            </ul>
+            <a href="#contacts" class="btn btn-primary btn-lg mt-3">Связаться со мной</a>
+        </div>
+    </section>
+
+    <!-- Скрипты -->
+    <script src="scripts/aos.js"></script>
+    <script src="scripts/bootstrap.bundle.min.js"></script>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>
