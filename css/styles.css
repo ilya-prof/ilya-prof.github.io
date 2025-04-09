@@ -149,7 +149,16 @@ body.dark-theme .accordion-body {
     color: #ffffff !important;
 }
 
+body.dark-theme .form-control::placeholder {
+    color: #f6f7f9 !important; /* Черный цвет для placeholder в темной теме */
+    opacity: 1; /* Убирает полупрозрачность в некоторых браузерах */
+}
+
+body.light-theme .form-control::placeholder {
+    color: #6c757d !important; /* Серый цвет для placeholder в светлой теме (по умолчанию Bootstrap) */
+    opacity: 1;
+}
 /* Кастомный курсор (опционально) */
 body {
-    cursor: url('/pic/cursor.png'), auto;
+    cursor: url(../pic/cursor.png), auto;
 }
