@@ -78,22 +78,32 @@
             </div>
         </div>
 
-        <!-- Дополнительные расходы -->
-        <div class="card bg-secondary p-4" data-aos="fade-up" data-aos-delay="300">
-            <h2 class="h4 mb-3">Дополнительные расходы</h2>
-            <ul class="list-unstyled">
-                <li>Разработка ТЗ – <strong>500 ₽</strong> (оплачивается авансом)</li>
-                <li>Хостинг, обслуживание VPS (RU/EU/US) – <strong>500 – 1 000 ₽/мес.</strong></li>
-                <li>Платное API (OpenAI, SMS, платежи) – <strong>зависит от нагрузки</strong></li>
-                <li>Техподдержка, консультации – <strong>1 000 ₽/час (мин. 500 ₽)</strong></li>
-            </ul>
-            <h2 class="h4 mt-4 mb-3">Бесплатно</h2>
-            <ul class="list-unstyled">
-                <li>Покупка VDS и первичная настройка (Timeweb.cloud)</li>
-                <li>Настройка и отладка в течение 7 дней после сдачи работы</li>
-            </ul>
+         <!-- Аккордеон для доп услуг -->
+         <div class="accordion mb-5" id="parsingAccordion" data-aos="fade-up" data-aos-delay="200">
+            <div class="accordion-item bg-secondary">
+                <h2 class="accordion-header" id="parsingHeading">
+                    <button class="accordion-button bg-secondary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#parsingCollapse" aria-expanded="true" aria-controls="parsingCollapse" style="font-size:2rem;">
+                        Дополнительные услуги
+                    </button>
+                </h2>
+                <div id="parsingCollapse" class="accordion-collapse collapse show" aria-labelledby="parsingHeading" data-bs-parent="#parsingAccordion">
+                    <div class="accordion-body">
+                        <h3>Сервер VDS </h3>
+                        <ul class="list-unstyled">
+                            <li>VDS Сервер (timeweb.cloud 24/7) для хранения данных. Установка, настройка, аренда первый месяц <strong>1 000 ₽</strong></li>
+                            <li>VDS сервер ежемесячная плата за аренду (со 2 мес.) <strong>600 ₽</strong></li>
+                            <li>Прокси (US/EU) - аренда 1 мес <strong>200 ₽</strong></li>
+                        </ul>   
+                        <h3>Прочее</h3>
+                        <ul class="list-unstyled"> 
+                            <li>Консультации, поддержка и доработки (почасовая оплата), мин. 500 ₽	<strong>1 000 ₽</strong></li>
+                            <li>VDS Сервер (timeweb.cloud 24/7) для хранения данных. Установка, настройка, аренда первый месяц <strong>1 000 ₽</strong></li>
+                        </ul>                                               
+                    </div>
+                </div>
+            </div>
         </div>
-
+        
         <!-- Уточнение -->
         <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="400">
             <p class="lead">Если нужен точный расчет под ваш проект, уточните:</p>
