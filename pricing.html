@@ -18,7 +18,6 @@
         <nav class="container py-3 d-flex justify-content-between align-items-center">
             <ul class="nav">
                 <li class="nav-item"><a href="index.html" class="nav-link">Главная</a></li>
-                <li class="nav-item"><a href="/index.html#contacts" class="nav-link">Контакты</a></li>
                 <li class="nav-item"><a href="pricing.html" class="nav-link">Прайс</a></li>
             </ul>
             <button id="theme-switch" class="btn btn-link fs-3">🌙</button>
@@ -76,6 +75,36 @@
             </div>
         </div>
 
+        <!-- Аккордеон для автоматизации Excel и Access -->
+        <div class="accordion mb-5" id="parsingAccordion" data-aos="fade-up" data-aos-delay="200">
+            <div class="accordion-item bg-secondary">
+                <h2 class="accordion-header" id="parsingHeading">
+                    <button class="accordion-button bg-secondary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#parsingCollapse" aria-expanded="true" aria-controls="parsingCollapse" style="font-size:2rem;">
+                        Автоматизация Excel, Access, Google Sheets
+                    </button>
+                </h2>
+                <div id="parsingCollapse" class="accordion-collapse collapse show" aria-labelledby="parsingHeading" data-bs-parent="#parsingAccordion">
+                    <div class="accordion-body">
+                        <h3>Автоматизация в Excel, Google Sheets</h3>
+                        <ul class="list-unstyled">
+                            <li>• Написание простого макроса &mdash;<strong> 1 000 ₽</strong></li>
+                            <li>• Создание сложного макроса &mdash;<strong> 2 000 - 5 000 ₽</strong></li>
+                            <li>• Обработка данных, интеграция с другими программами, API &mdash;<strong> 2 000 - 10 000 ₽</strong></li>                            
+                            <li>• Создание отчетов, интерактивного дашборда &mdash;<strong> 2 000 - 5000 ₽</strong></li>                            
+                            <li>• Разработка пользовательских форм (UserForm) &mdash;<strong> 2 000 - 5 000 ₽</strong></li>                                                        
+                        </ul>
+                        <h3>Автоматизация в Access</h3>
+                        <ul class="list-unstyled">
+                            <li>• Разработка форм &mdash;<strong> 1 000 - 3 000 ₽</strong></li>                            
+                            <li>• Макросы, слияния, экспорт в PDF, WORD &mdash;<strong>  2000 – 5 000 ₽</strong></li> 
+                            <li>• Сравнение данных с помощью ИИ (Эмбеддинг) &mdash;<strong> 3 000 - 5 000 ₽</strong></li>
+                            <li>• Создание отчетов, интерактивного дашборда &mdash;<strong> 3 000 - 5 000 ₽</strong></li>                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>             
+
          <!-- Аккордеон для доп услуг -->
          <div class="accordion mb-5" id="parsingAccordion" data-aos="fade-up" data-aos-delay="200">
             <div class="accordion-item bg-secondary">
@@ -112,7 +141,27 @@
                 <li>В каком виде нужен конечный результат?</li>
                 <li>Какой бюджет?</li>                
             </ul>
-            <a href="/index.html#contacts" class="btn btn-primary btn-lg mt-3">Связаться со мной</a>
+        </div>
+    </section>
+    <!-- Контакты -->
+    <section id="contacts" class="py-5 container">
+        <h2 class="display-5 fw-bold text-center mb-5" data-aos="fade-up">Связаться со мной</h2>
+        <form class="col-md-6 mx-auto" data-aos="fade-up" data-aos-delay="100" id="contact-form">
+            <div class="mb-3">
+                <input type="text" name="name" class="form-control bg-secondary text-white" placeholder="Ваше имя" required>
+            </div>
+            <div class="mb-3">
+                <input type="tel" name="phone" class="form-control bg-secondary text-white" placeholder="Ваш номер телефона" required>
+            </div>
+            <div class="mb-3">
+                <textarea name="message" class="form-control bg-secondary text-white" placeholder="Какой основной функционал? В каком виде нужен конечный результат? Какой бюджет?" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Отправить</button>
+        </form>
+        <div class="mt-4 text-center">
+            <a href="https://t.me/ilya_prof" target="_blank" rel="noopener noreferrer">
+                <img src="/pic/tg.png" alt="Телеграм" class="img-fluid" width="80"></a>
+            
         </div>
     </section>
 
