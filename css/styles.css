@@ -160,5 +160,5 @@ body.light-theme .form-control::placeholder {
 }
 /* Кастомный курсор (опционально) */
 body {
-    cursor: url(../pic/cursor.png), auto;
+    cursor: url(cursor.png), auto;
 }

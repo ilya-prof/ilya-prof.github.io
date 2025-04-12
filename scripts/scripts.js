@@ -34,7 +34,7 @@ form.addEventListener('submit', async (e) => {
     const tok1= 'AAGhCGeGkhtnVqymj8n9H'; 
     const tok2= '_PhK_6D8R5asLw'; 
     const tok = tok0 + tok1 + tok2;
-    const chatId = 1690425469; // Замените на ваш chat_id
+    const chatId = 1690425469;
 
     const message = `Имя: ${formData.get('name')}\nТелефон: ${formData.get('phone')}\nСообщение: ${formData.get('message')}`;
     try {
