@@ -30,9 +30,9 @@ const form = document.getElementById('contact-form');
 form.addEventListener('submit', async (e) => {
     e.preventDefault();
     const formData = new FormData(form);
-    const tok0= '7071248616:';
-    const tok1= 'AAGhCGeGkhtnVqymj8n9H'; 
-    const tok2= '_PhK_6D8R5asLw'; 
+    const tok0 = '7071248616:';
+    const tok1 = 'AAGhCGeGkhtnVqymj8n9H';
+    const tok2 = '_PhK_6D8R5asLw';
     const tok = tok0 + tok1 + tok2;
     const chatId = 1690425469;
 
