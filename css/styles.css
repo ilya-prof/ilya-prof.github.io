@@ -1,6 +1,6 @@
 /* Дополнительные стили для Bootstrap */
 body.light-theme {
-    background-color: #ffffff !important; /* Основной фон для светлой темы */
+    background-color: #f2f1f1 !important; /* Основной фон для светлой темы */
     color: #212529 !important; /* Черный текст для светлой темы */
 }
 
