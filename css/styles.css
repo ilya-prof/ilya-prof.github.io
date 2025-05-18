@@ -1,4 +1,9 @@
 /* Дополнительные стили для Bootstrap */
+
+*{
+    transition: all 3s ease;
+}
+
 body.light-theme {
     background-color: #f2f1f1 !important;
     /* Основной фон для светлой темы */
@@ -62,6 +67,7 @@ body.dark-theme #reviews {
 
 /* Карточки и формы */
 body.light-theme .card.bg-secondary,
+body.light-theme .modal-content,
 body.light-theme .form-control.bg-secondary {
     background-color: #e9ecef !important;
     color: #212529 !important;
@@ -69,6 +75,8 @@ body.light-theme .form-control.bg-secondary {
 }
 
 body.dark-theme .card.bg-secondary,
+body.dark-theme .modal-content,
+body.dark-theme .btn-close.btn,
 body.dark-theme .form-control.bg-secondary {
     background-color: #6c757d !important;
     color: #ffffff !important;
@@ -156,14 +164,14 @@ body.dark-theme .carousel-control-next-icon {
 
 /* Ховер-эффект для карточек */
 .card {
-    transition: transform 1s ease;
+    transition: transform 2s ease;
 }
 
 .card:hover {
     transform: scale(1.2);
 }
 
-/* Исправляем тему на прайсе */
+/* Меняем тему на прайсе */
 body.light-theme .accordion-body {
     background-color: #f8f9fa !important;
     color: #212529 !important;
@@ -199,7 +207,7 @@ body {
     cursor: url(/pic/cursor2.png), auto;
 }
 
-.btn:hover, a  {
+.btn:hover, .card:hover, button, a  {
     /* Меняем курсор при наведении */
     cursor: url(/pic/push.png), auto;
 }
