@@ -1,9 +1,5 @@
 /* Дополнительные стили для Bootstrap */
 
-*{
-    transition: all 3s ease;
-}
-
 body.light-theme {
     background-color: #f2f1f1 !important;
     /* Основной фон для светлой темы */
@@ -205,6 +201,10 @@ body.light-theme .form-control::placeholder {
 /* Кастомный курсор (опционально) */
 body {
     cursor: url(/pic/cursor2.png), auto;
+}
+
+.modal-content {
+    transition: all 3s ease; /* Плавная анимация при открытии модального окна */
 }
 
 .btn:hover, .card:hover, button, a  {
