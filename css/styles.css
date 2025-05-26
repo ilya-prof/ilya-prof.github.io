@@ -178,16 +178,9 @@ body.dark-theme .accordion-body {
     color: #ffffff !important;
 }
 
-.form-control::placeholder {
-    color: #f6f7f9 !important;
-    /* Черный цвет для placeholder в темной теме */
-    opacity: 1;
-    /* Убирает полупрозрачность в некоторых браузерах */
-}
-
 body.dark-theme .form-control::placeholder {
     color: #f6f7f9 !important;
-    /* Черный цвет для placeholder в темной теме */
+    /* Белый цвет для placeholder в темной теме */
     opacity: 1;
     /* Убирает полупрозрачность в некоторых браузерах */
 }
