@@ -1,95 +1,157 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/pic/prestige.ico" type="image/png" />
+    <title>
+      Фрилансер - Парсинг - Боты - Макросы - Мини-приложения - Сайты
+    </title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/css/aos.css" rel="stylesheet" />
+    <link href="/css/styles.css" rel="stylesheet" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/pic/prestige.ico" type="image/png">
-    <title>Фрилансер - Парсинг - Боты - Макросы - Мини-приложения - Сайты</title>
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/aos.css" rel="stylesheet">
-    <link href="/css/styles.css" rel="stylesheet">
-</head>
-
-
-<body class="dark-theme bg-dark text-white">
+  <body class="dark-theme bg-dark text-white">
     <!-- Хедер -->
     <header class="fixed-top bg-dark bg-opacity-75">
-        <nav class="container py-2 d-flex justify-content-between align-items-center">
-            <ul class="nav">
-                <li class="nav-item"><a href="#services" class="nav-link">Услуги</a></li>
-                <!-- <li class="nav-item"><a href="#portfolio" class="nav-link">Портфолио</a></li> -->
-                <li class="nav-item"><a href="#about" class="nav-link">Обо мне</a></li>
-                <li class="nav-item"><a href="#contacts" class="nav-link">Контакты</a></li>
-                <li class="nav-item"><a href="pricing.html" class="nav-link">Прайс</a></li>
-            </ul>
-            <button id="theme-switch" class="btn btn-link text-white fs-3">🌙</button>
-        </nav>
+      <nav
+        class="container py-2 d-flex justify-content-between align-items-center"
+      >
+        <ul class="nav">
+          <li class="nav-item">
+            <a href="#services" class="nav-link">Услуги</a>
+          </li>
+          <!-- <li class="nav-item"><a href="#portfolio" class="nav-link">Портфолио</a></li> -->
+          <li class="nav-item">
+            <a href="#about" class="nav-link">Обо мне</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contacts" class="nav-link">Контакты</a>
+          </li>
+          <li class="nav-item">
+            <a href="pricing.html" class="nav-link">Прайс</a>
+          </li>
+          <li class="nav-item">
+            <a href="pay.html" class="nav-link">Оплата</a>
+          </li>
+        </ul>
+        <button id="theme-switch" class="btn btn-link text-white fs-3">
+          🌙
+        </button>
+      </nav>
     </header>
 
     <!-- Hero-блок -->
-    <section id="hero" class="min-vh-100 d-flex align-items-center justify-content-center bg-dark">
-        <div class="text-center" data-aos="fade-up">
-            <h1 class="display-4 fw-bold mb-4">Автоматизация и IT-помощь для частных лиц и бизнеса</h1>
-            <p class="lead mb-4" style="font-size: 1.4rem;">Парсинг, Чат-боты, Мини-приложения, Макросы, Сайты</p>
-            <a href="#contacts" class="btn btn-primary btn-lg">Связаться со мной</a>
-        </div>
+    <section
+      id="hero"
+      class="min-vh-100 d-flex align-items-center justify-content-center bg-dark"
+    >
+      <div class="text-center" data-aos="fade-up">
+        <h1 class="display-4 fw-bold mb-4">
+          Автоматизация и IT-помощь для частных лиц и бизнеса
+        </h1>
+        <p class="lead mb-4" style="font-size: 1.4rem">
+          Парсинг, Чат-боты, Мини-приложения, Макросы, Сайты
+        </p>
+        <a href="#contacts" class="btn btn-primary btn-lg">Связаться со мной</a>
+      </div>
     </section>
 
     <!-- Услуги -->
     <section id="services" class="py-5 container">
-        <h2 class="display-5 fw-bold text-center mb-5" data-aos="fade-up">Мои услуги</h2>
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
-            <div class="col" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
-                <div class="card bg-secondary h-100">
-                    <div class="card-body text-center">
-                        <h3 class="card-title h4">Парсинг данных</h3>
-                        <p class="card-text">Сбор информации с сайтов и API</p>
-                    </div>
-                </div>
+      <h2 class="display-5 fw-bold text-center mb-5" data-aos="fade-up">
+        Мои услуги
+      </h2>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+        <div
+          class="col"
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="3000"
+        >
+          <div class="card bg-secondary h-100">
+            <div class="card-body text-center">
+              <h3 class="card-title h4">Парсинг данных</h3>
+              <p class="card-text">Сбор информации с сайтов и API</p>
             </div>
-            <div class="col" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
-                <div class="card bg-secondary h-100">
-                    <div class="card-body text-center">
-                        <h3 class="card-title h4">Чат-боты</h3>
-                        <p class="card-text">Простые Чат-боты (Telegram, VK) и с AI (Chat-GPT, DeepSeek)</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
-                <div class="card bg-secondary h-100">
-                    <div class="card-body text-center">
-                        <h3 class="card-title h4">EXCEL/ACCESS, GoogleSheets, Р7-Офис</h3>
-                        <p class="card-text">Скрипты и макросы, Обработка данных, Отчеты</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
-                <div class="card bg-secondary h-100">
-                    <div class="card-body text-center">
-                        <h3 class="card-title h4">MINI-APP Telegram</h3>
-                        <p class="card-text">Мини-приложения</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
-                <div class="card bg-secondary h-100">
-                    <div class="card-body text-center">
-                        <h3 class="card-title h4">Создание сайтов</h3>
-                        <p class="card-text">Создание сайтов - Wordpress, AI-конструкторы, чистый код (HTML, CSS, JS)
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
-                <div class="card bg-secondary h-100">
-                    <div class="card-body text-center">
-                        <h3 class="card-title h4">Настройка сайтов</h3>
-                        <p class="card-text">Модернизация и оптимизация сайтов, добавление функционала</p>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div
+          class="col"
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="3000"
+        >
+          <div class="card bg-secondary h-100">
+            <div class="card-body text-center">
+              <h3 class="card-title h4">Чат-боты</h3>
+              <p class="card-text">
+                Простые Чат-боты (Telegram, VK) и с AI (Chat-GPT, DeepSeek)
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col"
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="3000"
+        >
+          <div class="card bg-secondary h-100">
+            <div class="card-body text-center">
+              <h3 class="card-title h4">EXCEL/ACCESS, GoogleSheets, Р7-Офис</h3>
+              <p class="card-text">
+                Скрипты и макросы, Обработка данных, Отчеты
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col"
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="3000"
+        >
+          <div class="card bg-secondary h-100">
+            <div class="card-body text-center">
+              <h3 class="card-title h4">MINI-APP Telegram</h3>
+              <p class="card-text">Мини-приложения</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col"
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="3000"
+        >
+          <div class="card bg-secondary h-100">
+            <div class="card-body text-center">
+              <h3 class="card-title h4">Создание сайтов</h3>
+              <p class="card-text">
+                Создание сайтов - Wordpress, AI-конструкторы, чистый код (HTML,
+                CSS, JS)
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col"
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="3000"
+        >
+          <div class="card bg-secondary h-100">
+            <div class="card-body text-center">
+              <h3 class="card-title h4">Настройка сайтов</h3>
+              <p class="card-text">
+                Модернизация и оптимизация сайтов, добавление функционала
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Портфолио
@@ -112,128 +174,225 @@
 
     <!-- Обо мне -->
     <section id="about" class="py-5 container">
-        <h2 class="display-5 fw-bold text-center mb-5" data-aos="fade-up">Обо мне</h2>
-        <div class="row align-items-center" data-aos="fade-up" data-aos-delay="100">
-
-            <!-- Фото слева -->
-            <div class="col-md-4 text-center mb-4 mb-md-0">
-                <img src="pic/Avatar.png" alt="Фото Ильи" class="img-fluid rounded" data-aos="zoom-in-right"
-                    data-aos-duration="3000" style="max-height: 300px;">
-            </div>
-
-            <!-- Текст справа -->
-            <div class="col-md-8 text-center text-md-start" data-aos="zoom-out-left" data-aos-duration="3000">
-                <p class="mb-4" style="font-size: 1.25rem; line-height: 1.6;">
-                    Меня зовут Илья.<br>
-                    Я фрилансер с большим опытом в автоматизации (парсинг, скрипты и макросы), в разработке ботов и
-                    мини-приложений.<br>
-                    Помогаю бизнесу и частным лицам автоматизировать рутинные процессы, создаю современные решения.
-                </p>
-                <div class="d-flex flex-wrap justify-content-center justify-content-md-start gap-2">
-                    <span class="badge bg-primary">Python</span>
-                    <span class="badge bg-primary">JavaScript</span>
-                    <span class="badge bg-primary">HTML/CSS</span>
-                    <span class="badge bg-primary">VBA</span>
-                </div>
-            </div>
+      <h2 class="display-5 fw-bold text-center mb-5" data-aos="fade-up">
+        Обо мне
+      </h2>
+      <div
+        class="row align-items-center"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
+        <!-- Фото слева -->
+        <div class="col-md-4 text-center mb-4 mb-md-0">
+          <img
+            src="pic/Avatar.png"
+            alt="Фото Ильи"
+            class="img-fluid rounded"
+            data-aos="zoom-in-right"
+            data-aos-duration="3000"
+            style="max-height: 300px"
+          />
         </div>
+
+        <!-- Текст справа -->
+        <div
+          class="col-md-8 text-center text-md-start"
+          data-aos="zoom-out-left"
+          data-aos-duration="3000"
+        >
+          <p class="mb-4" style="font-size: 1.25rem; line-height: 1.6">
+            Меня зовут Илья.<br />
+            Я фрилансер с большим опытом в автоматизации (парсинг, скрипты и
+            макросы), в разработке ботов и мини-приложений.<br />
+            Помогаю бизнесу и частным лицам автоматизировать рутинные процессы,
+            создаю современные решения.
+          </p>
+          <div
+            class="d-flex flex-wrap justify-content-center justify-content-md-start gap-2"
+          >
+            <span class="badge bg-primary">Python</span>
+            <span class="badge bg-primary">JavaScript</span>
+            <span class="badge bg-primary">HTML/CSS</span>
+            <span class="badge bg-primary">VBA</span>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Отзывы (карусель Bootstrap) -->
     <section id="reviews" class="py-5 bg-secondary">
-        <div class="container">
-            <h2 class="display-5 fw-bold text-center mb-5" data-aos="fade-up">Отзывы</h2>
-            <div id="reviewsCarousel" class="carousel slide" data-bs-ride="carousel" data-aos="fade-right">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="text-center">
-                            <p class="lead fst-italic">"Отличная работа! Быстро и качественно сделал Telegram-бота для
-                                моих задач."</p>
-                            <p class="mt-3 fw-bold">— Иван, предприниматель</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="text-center">
-                            <p class="lead fst-italic">"Данные с нужных мне сайтов были подготовлены в сжатые сроки и в
-                                нужном мне формате. Рекомендую!"</p>
-                            <p class="mt-3 fw-bold">— Анна, предприниматель</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="text-center">
-                            <p class="lead fst-italic">"С помощью макросов и формы для EXCEL моя работа стала намного
-                                приятнее и эффективнее. Ручного труда стало намного меньше. Большое спасибо!"</p>
-                            <p class="mt-3 fw-bold">— Даниил, менеджер</p>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#reviewsCarousel"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#reviewsCarousel"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+      <div class="container">
+        <h2 class="display-5 fw-bold text-center mb-5" data-aos="fade-up">
+          Отзывы
+        </h2>
+        <div
+          id="reviewsCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+          data-aos="fade-right"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="text-center">
+                <p class="lead fst-italic">
+                  "Отличная работа! Быстро и качественно сделал Telegram-бота
+                  для моих задач."
+                </p>
+                <p class="mt-3 fw-bold">— Иван, предприниматель</p>
+              </div>
             </div>
+            <div class="carousel-item">
+              <div class="text-center">
+                <p class="lead fst-italic">
+                  "Данные с нужных мне сайтов были подготовлены в сжатые сроки и
+                  в нужном мне формате. Рекомендую!"
+                </p>
+                <p class="mt-3 fw-bold">— Анна, предприниматель</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="text-center">
+                <p class="lead fst-italic">
+                  "С помощью макросов и формы для EXCEL моя работа стала намного
+                  приятнее и эффективнее. Ручного труда стало намного меньше.
+                  Большое спасибо!"
+                </p>
+                <p class="mt-3 fw-bold">— Даниил, менеджер</p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#reviewsCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#reviewsCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
+      </div>
     </section>
 
     <!-- Контакты -->
     <section id="contacts" class="py-5 container">
-        <h2 class="display-5 fw-bold text-center mb-5" data-aos="fade-up">Связаться со мной</h2>
-        <form class="col-md-6 mx-auto" data-aos="fade-up" data-aos-delay="100" id="contact-form">
-            <div class="mb-3">
-                <input type="text" name="name" class="form-control bg-secondary" placeholder="Ваше имя"
-                    required>
-            </div>
-            <div class="mb-3">
-                <input type="tel" name="phone" class="form-control bg-secondary"
-                    placeholder="Ваш номер телефона" required>
-            </div>
-            <div class="mb-3">
-                <textarea name="message" class="form-control bg-secondary"
-                    placeholder="Какой основной функционал? В каком виде нужен конечный результат? Какой бюджет?"
-                    rows="4" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary w-100">Отправить</button>
-        </form>
-        <div class="mt-4 text-center">
-            <a href="https://t.me/ilya_prof" target="_blank" rel="noopener noreferrer">
-                <img src="/pic/tg.png" alt="Телеграм" class="img-fluid" width="80px" data-aos="flip-left"
-                    data-aos-easing="ease-out-cubic" data-aos-duration="3000"></a>
-            <a href="https://wa.me/79273662490" target="_blank" rel="noopener noreferrer">
-                <img src="/pic/WA2.png" alt="Whatsapp" class="img-fluid" width="80px" data-aos="flip-left"
-                    data-aos-easing="ease-out-cubic" data-aos-duration="3000"></a>
-            <a href="tel:+79273662490" target="_blank" rel="noopener noreferrer">
-                <img src="/pic/phone.png" alt="Телефон" class="img-fluid" width="80px" data-aos="flip-left"
-                    data-aos-easing="ease-out-cubic" data-aos-duration="3000"></a>
+      <h2 class="display-5 fw-bold text-center mb-5" data-aos="fade-up">
+        Связаться со мной
+      </h2>
+      <form
+        class="col-md-6 mx-auto"
+        data-aos="fade-up"
+        data-aos-delay="100"
+        id="contact-form"
+      >
+        <div class="mb-3">
+          <input
+            type="text"
+            name="name"
+            class="form-control bg-secondary"
+            placeholder="Ваше имя"
+            required
+          />
         </div>
+        <div class="mb-3">
+          <input
+            type="tel"
+            name="phone"
+            class="form-control bg-secondary"
+            placeholder="Ваш номер телефона"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <textarea
+            name="message"
+            class="form-control bg-secondary"
+            placeholder="Какой основной функционал? В каком виде нужен конечный результат? Какой бюджет?"
+            rows="4"
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Отправить</button>
+      </form>
+      <div class="mt-4 text-center">
+        <a
+          href="https://t.me/ilya_prof"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="/pic/tg.png"
+            alt="Телеграм"
+            class="img-fluid"
+            width="80px"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="3000"
+        /></a>
+        <a
+          href="https://wa.me/79273662490"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="/pic/WA2.png"
+            alt="Whatsapp"
+            class="img-fluid"
+            width="80px"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="3000"
+        /></a>
+        <a href="tel:+79273662490" target="_blank" rel="noopener noreferrer">
+          <img
+            src="/pic/phone.png"
+            alt="Телефон"
+            class="img-fluid"
+            width="80px"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="3000"
+        /></a>
+      </div>
     </section>
     <!-- Модальное окно -->
     <div id="serviceModal" class="modal fade" tabindex="-1">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modalTitle">Подробнее</h5>
-                    <button type="button" class="btn-close btn" data-bs-dismiss="modal"
-                        aria-label="Close"></button>
-                </div>
-                <div class="modal-body" id="modalBody">
-                    Здесь будет подробная информация.
-                </div>
-            </div>
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalTitle">Подробнее</h5>
+            <button
+              type="button"
+              class="btn-close btn"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body" id="modalBody">
+            Здесь будет подробная информация.
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- Скрипты -->
     <script src="scripts/aos.js"></script>
     <script src="scripts/bootstrap.bundle.min.js"></script>
     <script src="scripts/scripts.js"></script>
-
-    
-</body>
-
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Фрилансер Илья. Все права защищены.</p>
+      </div>
+    </footer>
+  </body>
 </html>

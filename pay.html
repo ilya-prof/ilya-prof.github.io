@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Оплата за услуги - Фрилансер Илья</title>
+    <link rel="icon" href="/pic/prestige.ico" type="image/png" />
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- AOS CSS -->
+    <link href="css/aos.css" rel="stylesheet" />
+    <!-- Кастомные стили -->
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+
+  <body class="dark-theme">
+    <!-- Header -->
+    <header class="fixed-top bg-dark bg-opacity-75">
+      <nav
+        class="container py-1 d-flex justify-content-between align-items-center"
+      >
+        <ul class="nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a href="pricing.html" class="nav-link">Прайс</a>
+          </li>
+        </ul>
+        <button id="theme-switch" class="btn btn-link fs-3">🌙</button>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <section class="py-5 container min-vh-100">
+      <h1 class="display-5 fw-bold text-center mb-5" data-aos="fade-up">
+        Оплата услуг
+      </h1>
+
+      <div class="payment-grid" >
+        <!-- Sberbank Section -->
+        <div class="payment-card" >
+          <h3>Сбербанк</h3>
+          <div class="qr-code">
+            <img src="pic/sber.png" alt="QR код Сбербанк" />
+          </div>
+          <p class="payment-description">
+            Отсканируйте QR-код<br />или перейдите по ссылке
+          </p>
+          <a
+            href="https://www.sberbank.com/sms/pbpn?requisiteNumber=79273662490"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="payment-button sberbank"
+          >
+            Оплатить через Сбербанк
+          </a>
+        </div>
+
+        <!-- T-Bank Section -->
+        <div class="payment-card" >
+          <h3>Т-Банк</h3>
+          <div class="qr-code">
+            <img src="pic/T-Bank.png" alt="QR код Т-Банк" />
+          </div>
+          <p class="payment-description">
+            Отсканируйте QR-код<br />или перейдите по ссылке
+          </p>
+          <a
+            href="https://www.tinkoff.ru/rm/r_QRZqHjjdwv.lCtNGUYoIl/qsrdu39310"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="payment-button tbank"
+          >
+            Оплатить через Т-Банк
+          </a>
+        </div>
+      </div>
+
+      <div class="instructions" data-aos="fade-up">
+        <h3>Инструкция по оплате</h3>
+        <ol>
+          <li>Выберите удобный Банк и способ оплаты (QR-код или ссылка)</li>
+          <li>Отсканируйте QR-код или нажмите на соответствующую кнопку</li>
+          <li>Укажите сумму согласно Вашему заказу</li>
+          <li>Подтвердите платеж в приложении Вашего банка</li>
+          <li>Сохраните (при необходимости отправьте) подтверждение платежа</li>
+        </ol>
+      </div>
+    </section>
+    <!-- Скрипты -->
+    <script src="scripts/aos.js"></script>
+    <script src="scripts/bootstrap.bundle.min.js"></script>
+    <script src="scripts/scripts.js"></script>
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Фрилансер Илья. Все права защищены.</p>
+      </div>
+    </footer>
+  </body>
+</html>

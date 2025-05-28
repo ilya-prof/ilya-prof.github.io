@@ -204,3 +204,129 @@ body {
     /* Меняем курсор при наведении */
     cursor: url(/pic/push.png), auto;
 }
+
+
+.btn-link {
+    color: #ffc107;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.payment-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .payment-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.payment-card {
+    background-color: var(--bs-gray-800);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.3);
+    transition: transform 1s ease-in-out;
+    text-align: center;
+}
+
+.payment-card:hover {
+    transform: scale(1.1);
+}
+
+.payment-card h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.qr-code {
+    margin: 1rem auto 1.5rem;
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.2);
+}
+
+.qr-code img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.payment-description {
+    color: var(--bs-gray-400);
+    margin-bottom: 1.5rem;
+}
+
+.payment-button {
+    display: inline-block;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--bs-green);
+    color: #fff;
+    border: none;
+    border-radius: 0.3rem;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.payment-button:hover {
+    background-color: #157347;
+}
+
+.payment-button.sberbank {
+    background-color: var(--bs-green);
+}
+
+.payment-button.tbank {
+    background-color: var(--bs-blue);
+}
+
+.instructions {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.instructions h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.instructions ol {
+    color: var(--bs-gray-400);
+    max-width: 40rem;
+    margin: 0 auto 2rem;
+    padding-left: 1.5rem;
+    text-align: left;
+}
+
+.instructions li {
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    padding: 2rem 0;
+    border-top: 1px solid var(--bs-gray-800);
+}
+
+footer p {
+    margin-bottom: 0;
+    color: #6c757d;
+    text-align: center;
+}
+
