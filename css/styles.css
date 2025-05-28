@@ -23,7 +23,13 @@ body.dark-theme header {
     background-color: rgba(33, 37, 41, 0.75) !important;
     /* Хедер в темной теме */
 }
-
+.fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+}
 /* Переопределение фона секций */
 body.light-theme #hero {
     background: linear-gradient(to bottom right, #f8f9fa, #e9ecef) !important;
