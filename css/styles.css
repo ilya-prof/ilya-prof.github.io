@@ -289,28 +289,28 @@ body {
     background-color: var(--bs-blue);
 }
 
-.instructions {
+/* .instructions {
     margin-top: 4rem;
     text-align: center;
-}
+} */
 
 .instructions h3 {
     font-size: 1.5rem;
     font-weight: 600;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
 }
 
-.instructions ol {
+/* .instructions ol {
     color: var(--bs-gray-400);
     max-width: 40rem;
     margin: 0 auto 2rem;
     padding-left: 1.5rem;
     text-align: left;
-}
+} */
 
-.instructions li {
+/* .instructions li {
     margin-bottom: 0.5rem;
-}
+} */
 
 footer {
     padding: 2rem 0;
