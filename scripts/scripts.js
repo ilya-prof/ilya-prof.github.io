@@ -345,3 +345,18 @@ serviceCards.forEach(card => {
         modal.show();
     });
 });
+
+// Копирование адреса в буфер обмена
+function copyToClipboard() {
+            const text = document.getElementById("textToCopy").innerText;
+            
+            navigator.clipboard.writeText(text).then(function() {
+            // Успешно скопировано
+            const alertBox = document.getElementById("alertBox");
+            alertBox.style.display = "block";
+            setTimeout(() => alertBox.style.display = "none", 2000); // Скрыть через 2 секунды
+            }).catch(err => {
+            console.error('Ошибка копирования: ', err);
+            });
+        }
+        

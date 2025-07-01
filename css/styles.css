@@ -292,6 +292,9 @@ body {
 }
 
 .payment-button.tbank {
+    background-color: var(--bs-yellow);
+}
+.payment-button.ton {
     background-color: var(--bs-blue);
 }
 

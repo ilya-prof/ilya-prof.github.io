@@ -32,7 +32,7 @@
     </header>
 
     <!-- Main Content -->
-    <section class="pt-5 py-5 container min-vh-100">
+    <section class="pt-5 py-5 container>
       <h1 class="display-5 fw-bold text-center mb-5" data-aos="fade-up">
         Оплата услуг
       </h1>
@@ -76,6 +76,27 @@
           </a>
         </div>
       </div>
+      <!-- TON Section -->
+      <div class="payment-card" data-aos="fade-left">
+        <h3>TON</h3>
+        <div class="qr-code">
+          <img src="pic/TON.png" alt="QR код ТON" />
+        </div>
+        <p class="payment-description">
+          Отсканируйте QR-код<br />или используйте адрес TON криптокошелька
+        </p>
+        <div class="container mt-1 text-center">
+          <p id="textToCopy">
+            UQDMhsUQQd0HQqK8AcHffzH9A1JaG17gOBkBcCmKssHVt0JM
+          </p>
+          <button class="btn btn-primary" onclick="copyToClipboard()">
+            Скопировать адрес
+          </button>
+          <div id="alertBox" class="mt-3 text-success" style="display: none">
+            Адрес кошелька TON скопирован!
+          </div>
+        </div>
+      </div>
 
       <div class="instructions" data-aos="fade-up">
         <h3>Инструкция по оплате</h3>
@@ -94,7 +115,7 @@
       <h2 class="display-5 fw-bold text-center mb-5" data-aos="fade-up">
         Связаться со мной
       </h2>
-        <div class="mt-4 text-center">
+      <div class="mt-4 text-center">
         <a
           href="https://t.me/ilya_prof"
           target="_blank"
@@ -135,10 +156,12 @@
         /></a>
       </div>
     </section>
+
     <!-- Скрипты -->
     <script src="scripts/aos.js"></script>
     <script src="scripts/bootstrap.bundle.min.js"></script>
     <script src="scripts/scripts.js"></script>
+
     <footer>
       <div class="container">
         <p>&copy; 2025 Фрилансер Илья. Все права защищены.</p>
