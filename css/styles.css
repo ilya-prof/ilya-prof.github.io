@@ -204,15 +204,6 @@ body {
     cursor: url(/pic/push.png), auto;
 }
 
-
-.btn-link {
-    color: #ffc107;
-    font-size: 1.5rem;
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-
 .payment-grid {
     display: grid;
     /* grid-template-columns: 1fr; */
