@@ -13,39 +13,52 @@
   </head>
 
   <body class="dark-theme">
-    <!-- Хедер -->
-    <header class="fixed-top bg-dark bg-opacity-75">
-      <nav
-        class="container py-1 d-flex justify-content-between align-items-center"
-      >
-        <ul class="nav">
-          <!-- <li class="nav-item">
-            <a href="#services" class="nav-link">Услуги</a>
-          </li> -->
-          <!-- <li class="nav-item"><a href="#portfolio" class="nav-link">Портфолио</a></li> -->
-          <li class="nav-item">
-            <a href="#about" class="nav-link">Обо мне</a>
-          </li>
-          <li class="nav-item">
-            <a href="pricing.html" class="nav-link">Прайс</a>
-          </li>
-          <li class="nav-item">
-            <a href="pay.html" class="nav-link">Оплата</a>
-          </li>
-          <li class="nav-item">
-            <a href="#contacts" class="nav-link">Контакты</a>
-          </li>
-        </ul>
-        <button id="theme-switch" class="btn btn-link text-white fs-3">
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#about">Обо мне</a>
+            </li>
+            <li class="nav-item">
+              <a href="pricing.html" class="nav-link">Прайс</a>
+            </li>
+            <li class="nav-item">
+              <a href="pay.html" class="nav-link">Оплата</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contacts" class="nav-link">Контакты</a>
+            </li>
+            <li class="nav-item">
+              <a href="portfolio.html" class="nav-link">Портфолио</a>
+            </li>
+          </ul>
+        </div>
+        <button
+          id="theme-switch"
+          class="btn btn-link"
+          style="font-size: 1.5rem"
+        >
           🌙
         </button>
-      </nav>
-    </header>
+      </div>
+    </nav>
 
     <!-- Hero-блок -->
     <section
       id="hero"
-      class="pt-5 py-5 min-vh-100 d-flex align-items-center justify-content-center bg-dark"
+      class="p p-5 py-5 m-1 min-vh-100 d-flex align-items-center justify-content-center bg-dark"
     >
       <div class="text-center" data-aos="fade-up">
         <h1 class="display-4 fw-bold mb-4">
@@ -154,23 +167,6 @@
       </div>
     </section>
 
-    <!-- Портфолио
-    <section id="portfolio" class="py-5 bg-secondary">
-        <div class="container">
-            <h2 class="display-5 fw-bold text-center mb-5" data-aos="fade-up">Ваша выгода</h2>
-            <div class="row g-4">
-                <div class="col-md-4" data-aos="zoom-in">
-                    <div class="card bg-dark h-100">Оплата только после достижения результата в соответствии с Вашими ожиданиями</div>
-                </div>
-                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="card bg-dark h-100">Проверка 2</div>
-                </div>
-                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="card bg-dark h-100">Проверка 3 </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
 
     <!-- Обо мне -->
     <section id="about" class="py-5 container">
@@ -194,7 +190,7 @@
           />
         </div>
 
-        <!-- Текст справа -->
+        
         <div
           class="col-md-8 text-center text-md-start"
           data-aos="zoom-out-left"
@@ -220,18 +216,18 @@
     </section>
 
     <!-- Отзывы (карусель Bootstrap) -->
-    <section id="reviews" class="py-5 bg-secondary">
+    <section id="reviews" class="py-5">
       <div class="container">
         <h2 class="display-5 fw-bold text-center mb-5" data-aos="fade-up">
           Отзывы
         </h2>
         <div
           id="reviewsCarousel"
-          class="carousel slide"
+          class="carousel slide bg-secondary"
           data-bs-ride="carousel"
           data-aos="fade-right"
         >
-          <div class="carousel-inner">
+          <div class="carousel-inner ">
             <div class="carousel-item active">
               <div class="text-center">
                 <p class="lead fst-italic">

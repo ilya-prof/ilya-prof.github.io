@@ -1,292 +1,289 @@
-/* Дополнительные стили для Bootstrap */
-
 body.light-theme {
-    background-color: #f2f1f1 !important;
-    /* Основной фон для светлой темы */
-    color: #212529 !important;
-    /* Черный текст для светлой темы */
+  background-color: #f2f1f1 !important;
+  /* Основной фон для светлой темы */
+  color: #212529 !important;
+  /* Черный текст для светлой темы */
 }
 
 body.dark-theme {
-    background-color: #212529 !important;
-    /* Основной фон для темной темы */
-    color: #ffffff !important;
-    /* Белый текст для темной темы */
+  background-color: #212529 !important;
+  /* Основной фон для темной темы */
+  color: #ffffff !important;
+  /* Белый текст для темной темы */
 }
 
 body.light-theme header {
-    background-color: rgba(255, 255, 255, 0.8) !important;
-    /* Хедер в светлой теме */
+  background-color: rgba(255, 255, 255, 0.8) !important;
+  /* Хедер в светлой теме */
 }
 
 body.dark-theme header {
-    background-color: rgba(33, 37, 41, 0.75) !important;
-    /* Хедер в темной теме */
+  background-color: rgba(33, 37, 41, 0.75) !important;
+  /* Хедер в темной теме */
 }
+
+.form-control::placeholder {
+  color: #f6f7f9;
+}
+
 /* Переопределение фона секций */
 body.light-theme #hero {
-    background: linear-gradient(to bottom right, #f8f9fa, #e9ecef) !important;
-    /* Hero в светлой теме */
+  background: linear-gradient(to bottom right, #f8f9fa, #e9ecef) !important;
+  /* Hero в светлой теме */
 }
 
 body.dark-theme #hero {
-    background: linear-gradient(to bottom right, #343a40, #212529) !important;
-    /* Hero в темной теме */
+  background: linear-gradient(to bottom right, #343a40, #212529) !important;
+  /* Hero в темной теме */
 }
 
 body.light-theme #services,
 body.light-theme #about,
-body.light-theme #contacts {
-    background-color: #ffffff !important;
-    /* Фон услуг, "Обо мне" и контактов в светлой теме */
+body.light-theme #contacts,
+body.light-theme #reviews {
+  background-color: #ffffff !important;
+  /* Фон услуг, "Обо мне" и контактов в светлой теме */
 }
 
 body.dark-theme #services,
 body.dark-theme #about,
-body.dark-theme #contacts {
-    background-color: #212529 !important;
-    /* Фон услуг, "Обо мне" и контактов в темной теме */
-}
-
-body.light-theme #portfolio,
-body.light-theme #reviews {
-    background-color: #f8f9fa !important;
-    /* Фон портфолио и отзывов в светлой теме */
-}
-
-body.dark-theme #portfolio,
+body.dark-theme #contacts,
 body.dark-theme #reviews {
-    background-color: #6c757d !important;
-    /* Фон портфолио и отзывов в темной теме */
+  background-color: #212529 !important;
+  /* Фон услуг, "Обо мне" и контактов в темной теме */
 }
 
 /* Карточки и формы */
 body.light-theme .card.bg-secondary,
 body.light-theme .modal-content,
-body.light-theme .form-control.bg-secondary {
-    background-color: #e9ecef !important;
-    color: #212529 !important;
-    /* Черный текст для читаемости */
+body.light-theme .form-control.bg-secondary,
+body.light-theme #reviewsCarousel {
+  background-color: #e9ecef !important;
+  color: #212529 !important;
+  /* Черный текст для читаемости */
 }
 
 body.dark-theme .card.bg-secondary,
 body.dark-theme .modal-content,
 body.dark-theme .btn-close.btn,
 body.dark-theme .form-control.bg-secondary {
-    background-color: #6c757d !important;
-    color: #ffffff !important;
-    /* Белый текст для темной темы */
+  background-color: #6c757d !important;
+  color: #ffffff !important;
+  /* Белый текст для темной темы */
 }
 
 body.light-theme .card.bg-dark {
-    background-color: #343a40 !important;
-    /* Карточки портфолио в светлой теме */
+  background-color: #343a40 !important;
+  /* Карточки портфолио в светлой теме */
 }
 
 body.dark-theme .card.bg-dark {
-    background-color: #343a40 !important;
-    /* Карточки портфолио в темной теме */
+  background-color: #343a40 !important;
+  /* Карточки портфолио в темной теме */
 }
 
 /* Навигация */
 body.light-theme .nav-link {
-    color: #212529 !important;
-    /* Черный цвет ссылок в светлой теме */
+  color: #212529 !important;
+  /* Черный цвет ссылок в светлой теме */
 }
 
 body.dark-theme .nav-link {
-    color: #ffffff !important;
-    /* Белый цвет ссылок в темной теме */
+  color: #ffffff !important;
+  /* Белый цвет ссылок в темной теме */
 }
 
 body.light-theme .nav-link:hover {
-    color: #0d6efd !important;
-    /* Синий при наведении в светлой теме */
+  color: #0d6efd !important;
+  /* Синий при наведении в светлой теме */
 }
 
 body.dark-theme .nav-link:hover {
-    color: #66b0ff !important;
-    /* Светло-синий при наведении в темной теме */
+  color: #66b0ff !important;
+  /* Светло-синий при наведении в темной теме */
 }
 
 /* Кнопки */
 body.light-theme .btn-primary {
-    background-color: #0d6efd !important;
-    color: #ffffff !important;
+  background-color: #0d6efd !important;
+  color: #ffffff !important;
 }
 
 body.light-theme .btn-primary:hover {
-    background-color: #0056b3 !important;
+  background-color: #0056b3 !important;
 }
 
 body.dark-theme .btn-primary {
-    background-color: #0d6efd !important;
-    color: #ffffff !important;
+  background-color: #0d6efd !important;
+  color: #ffffff !important;
 }
 
 body.dark-theme .btn-primary:hover {
-    background-color: #66b0ff !important;
+  background-color: #66b0ff !important;
 }
 
 /* Ссылка Telegram */
 body.light-theme #contacts a {
-    color: #0d6efd !important;
-    /* Синий цвет ссылки в светлой теме */
+  color: #0d6efd !important;
+  /* Синий цвет ссылки в светлой теме */
 }
 
 body.dark-theme #contacts a {
-    color: #66b0ff !important;
-    /* Светло-синий в темной теме */
+  color: #66b0ff !important;
+  /* Светло-синий в темной теме */
 }
 
 /* Карусель */
 body.light-theme .carousel-control-prev-icon,
 body.light-theme .carousel-control-next-icon {
-    filter: invert(1);
-    /* Черные стрелки в светлой теме */
+  filter: invert(1);
+  /* Черные стрелки в светлой теме */
 }
 
 body.dark-theme .carousel-control-prev-icon,
 body.dark-theme .carousel-control-next-icon {
-    filter: none;
-    /* Белые стрелки в темной теме */
+  filter: none;
+  /* Белые стрелки в темной теме */
 }
 
 /* Параллакс для Hero */
 #hero {
-    background-attachment: fixed;
+  background-attachment: fixed;
 }
 
 /* Ховер-эффект для карточек */
 .card {
-    transition: transform 2s ease;
+  transition: transform 2s ease;
 }
 
 .card:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 /* Меняем тему на прайсе */
 body.light-theme .accordion-body {
-    background-color: #f8f9fa !important;
-    color: #212529 !important;
+  background-color: #f8f9fa !important;
+  color: #212529 !important;
 }
 
 body.dark-theme .accordion-body {
-    background-color: #343a40 !important;
-    color: #ffffff !important;
+  background-color: #343a40 !important;
+  color: #ffffff !important;
 }
 
 body.dark-theme .form-control::placeholder {
-    color: #f6f7f9 !important;
-    /* Белый цвет для placeholder в темной теме */
-    opacity: 1;
-    /* Убирает полупрозрачность в некоторых браузерах */
+  color: #f6f7f9 !important;
+  /* Белый цвет для placeholder в темной теме */
+  /* opacity: 1; */
+  /* Убирает полупрозрачность в некоторых браузерах */
 }
 
 body.light-theme .form-control::placeholder {
-    color: #6c757d !important;
-    /* Серый цвет для placeholder в светлой теме (по умолчанию Bootstrap) */
-    opacity: 1;
+  color: #6c757d !important;
+  /* Серый цвет для placeholder в светлой теме (по умолчанию Bootstrap) */
+  /* opacity: 1; */
 }
 
 /* Кастомный курсор (опционально) */
 body {
-    cursor: url(/pic/cursor2.png), auto;
+  cursor: url(/pic/cursor2.png), auto;
 }
 
 .modal-content {
-    transition: all 3s ease; /* Плавная анимация при открытии модального окна */
+  transition: all 3s ease; /* Плавная анимация при открытии модального окна */
 }
 
-.btn:hover, .card:hover, button, a  {
-    /* Меняем курсор при наведении */
-    cursor: url(/pic/push.png), auto;
+.btn:hover,
+.card:hover,
+button,
+a {
+  /* Меняем курсор при наведении */
+  cursor: url(/pic/push.png), auto;
 }
 
 .payment-grid {
-    display: grid;
-    /* grid-template-columns: 1fr; */
-    gap: 3rem;
-    max-width: 800px;
-    margin: 0 auto;
+  display: grid;
+  /* grid-template-columns: 1fr; */
+  gap: 3rem;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 @media (min-width: 768px) {
-    .payment-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .payment-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .payment-card {
-    background-color: var(--bs-gray-800);
-    border-radius: 0.5rem;
-    padding: 1.5rem;
-    box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.3);
-    transition: transform 1s ease-in-out;
-    text-align: center;
+  background-color: var(--bs-gray-800);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.3);
+  transition: transform 1s ease-in-out;
+  text-align: center;
 }
 
 .payment-card:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .payment-card h3 {
-    font-size: 1.75rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
 }
 
 .qr-code {
-    margin: 1rem auto 1.5rem;
-    width: 200px;
-    height: 200px;
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 0.5rem;
-    box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.2);
+  margin: 1rem auto 1.5rem;
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
 }
 
 .qr-code img {
-    max-width: 100%;
-    max-height: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .payment-description {
-    color: var(--bs-gray-400);
-    margin-bottom: 1.5rem;
+  color: var(--bs-gray-400);
+  margin-bottom: 1.5rem;
 }
 
 .payment-button {
-    display: inline-block;
-    width: 100%;
-    padding: 0.75rem 1rem;
-    font-size: 1rem;
-    font-weight: 500;
-    text-align: center;
-    text-decoration: none;
-    background-color: var(--bs-green);
-    color: #fff;
-    border: none;
-    border-radius: 0.3rem;
-    transition: background-color 0.2s ease-in-out;
+  display: inline-block;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--bs-green);
+  color: #fff;
+  border: none;
+  border-radius: 0.3rem;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .payment-button:hover {
-    background-color: #157347;
+  background-color: #157347;
 }
 
 .payment-button.sberbank {
-    background-color: var(--bs-green);
+  background-color: var(--bs-green);
 }
 
 .payment-button.tbank {
-    background-color: var(--bs-yellow);
+  background-color: var(--bs-yellow);
 }
 .payment-button.ton {
-    background-color: var(--bs-blue);
+  background-color: var(--bs-blue);
 }
 
 /* .instructions {
@@ -295,9 +292,9 @@ body {
 } */
 
 .instructions h3 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    /* margin-bottom: 1rem; */
+  font-size: 1.5rem;
+  font-weight: 600;
+  /* margin-bottom: 1rem; */
 }
 
 /* .instructions ol {
@@ -313,20 +310,56 @@ body {
 } */
 
 footer {
-    padding: 2rem 0;
-    border-top: 1px solid var(--bs-gray-800);
+  padding: 2rem 0;
+  border-top: 1px solid var(--bs-gray-800);
 }
 
 footer p {
-    margin-bottom: 0;
-    color: #6c757d;
-    text-align: center;
+  margin-bottom: 0;
+  color: #6c757d;
+  text-align: center;
 }
 
 .fixed-top {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1030;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030;
+}
+
+/* #Для портфолио */
+
+.dark-theme .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Также можно поменять цвет рамки кнопки при фокусе, если нужно */
+.dark-theme .navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+.dark-theme .navbar-toggler:focus {
+  box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
+}
+
+.portfolio-section {
+  padding: 80px 0;
+}
+.card {
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-10px);
+}
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+.footer {
+  background-color: #343a40;
+  color: white;
+  padding: 40px 0;
 }

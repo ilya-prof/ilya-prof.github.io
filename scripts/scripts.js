@@ -4,26 +4,45 @@ AOS.init({
     once: true,
 });
 
-// Переключатель темы
-const themeSwitch = document.getElementById('theme-switch');
-themeSwitch.addEventListener('click', () => {
-    if (document.body.classList.contains('dark-theme')) {
-        document.body.classList.remove('dark-theme');
-        document.body.classList.add('light-theme');
-        themeSwitch.textContent = '☀️'; // Светлая тема
-        localStorage.setItem('theme', 'light');
+// Функция для применения темы
+function applyTheme(theme) {
+    const body = document.body;
+    const navbar = document.querySelector('.navbar');
+    const themeSwitch = document.getElementById('theme-switch');
+  
+    if (theme === 'light') {
+      body.classList.remove('dark-theme');
+      body.classList.add('light-theme');
+      navbar.classList.remove('bg-dark', 'navbar-dark');
+      navbar.classList.add('bg-light', 'navbar-light');
+      if (themeSwitch) themeSwitch.textContent = '☀️';
     } else {
-        document.body.classList.remove('light-theme');
-        document.body.classList.add('dark-theme');
-        themeSwitch.textContent = '🌙'; // Темная тема
-        localStorage.setItem('theme', 'dark');
+      body.classList.remove('light-theme');
+      body.classList.add('dark-theme');
+      navbar.classList.remove('bg-light', 'navbar-light');
+      navbar.classList.add('bg-dark', 'navbar-dark');
+      if (themeSwitch) themeSwitch.textContent = '🌙';
     }
-});
-
-// Загрузка сохраненной темы
-const savedTheme = localStorage.getItem('theme') || 'dark';
-document.body.classList.add(`${savedTheme}-theme`);
-themeSwitch.textContent = savedTheme === 'dark' ? '🌙' : '☀️';
+  }
+  
+  // Переключатель темы
+  document.addEventListener('DOMContentLoaded', function() {
+    const themeSwitch = document.getElementById('theme-switch');
+    
+    if (themeSwitch) {
+      themeSwitch.addEventListener('click', () => {
+        const currentTheme = document.body.classList.contains('dark-theme') ? 'dark' : 'light';
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        
+        localStorage.setItem('theme', newTheme);
+        applyTheme(newTheme);
+      });
+    }
+  
+    // Применяем сохранённую тему при загрузке
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    applyTheme(savedTheme);
+  });
 
 // Обработка формы (Telegram Bot API)
 const form = document.getElementById('contact-form');
