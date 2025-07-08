@@ -19,56 +19,58 @@
 </head>
 
 <body class="dark-theme">
-    <!-- Хедер -->
-    <header class="fixed-top bg-dark bg-opacity-75">
-        <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
-            <div class="container">
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav"
-                aria-controls="navbarNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="index.html">Главная</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="pricing.html" class="nav-link">Прайс</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="pay.html" class="nav-link">Оплата</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#contacts" class="nav-link">Контакты</a>
-                  </li>
-                </ul>
-              </div>
-              <button
-                id="theme-switch"
-                class="btn btn-link"
-                style="font-size: 1.5rem"
-              >
-                🌙
-              </button>
-            </div>
-          </nav>
-    </header>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active text-uppercase" href="index.html"
+                  >Главная</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="pay.html" class="nav-link text-uppercase">Оплата</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contacts" class="nav-link text-uppercase">Контакты</a>
+              </li>
+              <li class="nav-item">
+                <a href="portfolio.html" class="nav-link text-uppercase"
+                  >Портфолио</a
+                >
+              </li>
+            </ul>
+          </div>
+          <button
+            id="theme-switch"
+            class="btn btn-link"
+            style="font-size: 1.5rem"
+          >
+            🌙
+          </button>
+        </div>
+      </nav>
+  
 
     <!-- Основной контент -->
-    <section id="pricing" class="py-5 container min-vh-100">
+    <section id="pricing" class="py-5 mt-5 container min-vh-100">
         <h1 class="display-5 fw-bold text-center mb-5" data-aos="fade-up">Прайс на услуги</h1>
 
         <!-- Аккордеон для ботов -->
-        <div class="accordion mb-5" id="botsAccordion" data-aos="fade-up" data-aos-delay="100">
-            <div class="accordion-item bg-secondary">
-                <h2 class="accordion-header" id="botsHeading"> <button class="accordion-button bg-secondary text-white"
+        <div class="accordion mb-5" id="botsAccordion" data-aos="fade-up" >
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="botsHeading"> <button class="accordion-button"
                         type="button" data-bs-toggle="collapse" data-bs-target="#botsCollapse" aria-expanded="true"
                         aria-controls="botsCollapse" style="font-size:2rem;">
                         Боты
@@ -163,7 +165,7 @@
         </div>
 
         <!-- Аккордеон для сайтов -->
-        <div class="accordion mb-5" id="siteAccordion" data-aos="fade-up" data-aos-delay="100">
+        <div class="accordion mb-5" id="siteAccordion" data-aos="fade-up" >
             <div class="accordion-item bg-secondary">
                 <h2 class="accordion-header" id="botsHeading"> <button class="accordion-button bg-secondary text-white"
                         type="button" data-bs-toggle="collapse" data-bs-target="#botsCollapse" aria-expanded="true"
@@ -192,7 +194,7 @@
         </div>
 
         <!-- Аккордеон для Telegram Mini App-->
-        <div class="accordion mb-5" id="MiniAppAccordion" data-aos="fade-up" data-aos-delay="100">
+        <div class="accordion mb-5" id="MiniAppAccordion" data-aos="fade-up" >
             <div class="accordion-item bg-secondary">
                 <h2 class="accordion-header" id="botsHeading"> <button class="accordion-button bg-secondary text-white"
                         type="button" data-bs-toggle="collapse" data-bs-target="#botsCollapse" aria-expanded="true"
@@ -223,9 +225,9 @@
 
         <!-- Аккордеон для доп услуг -->
         <div class="accordion mb-5" id="parsingAccordion" data-aos="fade-up" data-aos-delay="200">
-            <div class="accordion-item bg-secondary">
+            <div class="accordion-item">
                 <h2 class="accordion-header" id="parsingHeading">
-                    <button class="accordion-button bg-secondary text-white" type="button" data-bs-toggle="collapse"
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
                         data-bs-target="#parsingCollapse" aria-expanded="true" aria-controls="parsingCollapse"
                         style="font-size:2rem;">
                         Дополнительные услуги
@@ -268,7 +270,7 @@
     <!-- Контакты -->
     <section id="contacts" class="py-5 container">
         <h2 class="display-5 fw-bold text-center mb-5" data-aos="fade-up">Связаться со мной</h2>
-        <form class="col-md-6 mx-auto" data-aos="fade-up" data-aos-delay="100" id="contact-form">
+        <form class="col-md-6 mx-auto" data-aos="fade-up"  id="contact-form">
             <div class="mb-3">
                 <input type="text" name="name" class="form-control bg-secondary" placeholder="Ваше имя"
                     required>
@@ -305,7 +307,7 @@
     <!-- Footer -->
     <footer>
         <div class="container pb-3 text-center">
-            <p>&copy; 2025 Фрилансер Илья. Все права защищены.</p>
+            <p>&copy; 2025 Фрилансер Илья.<br>Все права защищены.</p>
         </div>
     </footer>
 </body>

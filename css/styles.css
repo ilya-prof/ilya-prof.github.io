@@ -1,8 +1,6 @@
 body {
   overflow-x: hidden;
-  font-family: 'Montserrat', sans-serif;
-  margin: 0;
-  padding: 0;
+  font-family: "Montserrat", sans-serif;
 }
 
 body.light-theme {
@@ -21,17 +19,6 @@ body.dark-theme {
 
 .form-control::placeholder {
   color: #f6f7f9;
-}
-
-/* Переопределение фона секций */
-body.light-theme #hero .text-center {
-  background: linear-gradient(to bottom right, #f8f9fa, #e9ecef) !important;
-  /* Hero в светлой теме */
-}
-
-body.dark-theme #hero .text-center {
-  background: linear-gradient(to bottom right, #343a40, #212529) !important;
-  /* Hero в темной теме */
 }
 
 /* Фон услуг, "Обо мне" и контактов в светлой теме */
@@ -57,8 +44,13 @@ body.light-theme .modal-content,
 body.light-theme .btn-close.btn,
 body.light-theme .about-text,
 body.light-theme #reviewsCarousel,
-body.light-theme .form-control{
-  background: linear-gradient(to bottom right, #f8f9fa, #e9ecef) !important;
+body.light-theme .form-control,
+body.light-theme #hero .text-center,
+body.light-theme .accordion-item,
+body.light-theme .accordion-button,
+body.light-theme .payment-card 
+ {
+  background: linear-gradient(to bottom right, #f8f9fa, #e9ecef) !important; 
   color: #212529 !important;
 }
 
@@ -68,83 +60,30 @@ body.dark-theme .modal-content,
 body.dark-theme .btn-close.btn,
 body.dark-theme .about-text,
 body.dark-theme #reviewsCarousel,
-body.dark-theme .form-control {
+body.dark-theme .form-control,
+body.dark-theme #hero .text-center,
+body.dark-theme .accordion-item,
+body.dark-theme .accordion-button,
+body.dark-theme .payment-card {
   background: linear-gradient(to bottom right, #343a40, #212529) !important;
   color: #ffffff !important;
 }
 
-body.light-theme .card.bg-dark {
-  background-color: #343a40 !important;
-  /* Карточки портфолио в светлой теме */
-}
-
-body.dark-theme .card.bg-dark {
-  background-color: #343a40 !important;
-  /* Карточки портфолио в темной теме */
-}
-
-/* Навигация */
-body.light-theme .nav-link {
-  color: #212529 !important;
-  /* Черный цвет ссылок в светлой теме */
-}
-
-body.dark-theme .nav-link {
-  color: #ffffff !important;
-  /* Белый цвет ссылок в темной теме */
-}
-
-body.light-theme .nav-link:hover {
+.nav-link:hover {
   color: #0d6efd !important;
-  /* Синий при наведении в светлой теме */
-}
-
-body.dark-theme .nav-link:hover {
-  color: #66b0ff !important;
-  /* Светло-синий при наведении в темной теме */
-}
-
-/* Кнопки */
-body.light-theme .btn-primary {
-  background-color: #0d6efd !important;
-  color: #ffffff !important;
-}
-
-body.light-theme .btn-primary:hover {
-  background-color: #0056b3 !important;
-}
-
-body.dark-theme .btn-primary {
-  background-color: #0d6efd !important;
-  color: #ffffff !important;
-}
-
-body.dark-theme .btn-primary:hover {
-  background-color: #66b0ff !important;
-}
-
-/* Ссылка Telegram */
-body.light-theme #contacts a {
-  color: #0d6efd !important;
-  /* Синий цвет ссылки в светлой теме */
-}
-
-body.dark-theme #contacts a {
-  color: #66b0ff !important;
-  /* Светло-синий в темной теме */
 }
 
 /* Карусель */
+/* Черные стрелки в светлой теме */
 body.light-theme .carousel-control-prev-icon,
 body.light-theme .carousel-control-next-icon {
   filter: invert(1);
-  /* Черные стрелки в светлой теме */
 }
 
+/* Белые стрелки в темной теме */
 body.dark-theme .carousel-control-prev-icon,
 body.dark-theme .carousel-control-next-icon {
   filter: none;
-  /* Белые стрелки в темной теме */
 }
 
 /* Ховер-эффект для карточек */
@@ -156,28 +95,12 @@ body.dark-theme .carousel-control-next-icon {
   transform: scale(1.2);
 }
 
-/* Меняем тему на прайсе */
-body.light-theme .accordion-body {
-  background-color: #f8f9fa !important;
-  color: #212529 !important;
-}
-
-body.dark-theme .accordion-body {
-  background-color: #343a40 !important;
-  color: #ffffff !important;
-}
-
 body.dark-theme .form-control::placeholder {
   color: #f6f7f9 !important;
-  /* Белый цвет для placeholder в темной теме */
-  /* opacity: 1; */
-  /* Убирает полупрозрачность в некоторых браузерах */
 }
 
 body.light-theme .form-control::placeholder {
   color: #6c757d !important;
-  /* Серый цвет для placeholder в светлой теме (по умолчанию Bootstrap) */
-  /* opacity: 1; */
 }
 
 /* Кастомный курсор (опционально) */
@@ -191,8 +114,8 @@ body {
 
 .btn:hover,
 .card:hover,
-button,
-a {
+button:hover,
+a:hover {
   /* Меняем курсор при наведении */
   cursor: url(/pic/push.png), auto;
 }
@@ -321,5 +244,3 @@ a {
   height: 200px;
   object-fit: cover;
 }
-
-
