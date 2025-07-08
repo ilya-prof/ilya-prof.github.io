@@ -44,39 +44,44 @@ body.dark-theme #hero {
   /* Hero в темной теме */
 }
 
+/* Фон услуг, "Обо мне" и контактов в светлой теме */
 body.light-theme #services,
 body.light-theme #about,
 body.light-theme #contacts,
 body.light-theme #reviews {
   background-color: #ffffff !important;
-  /* Фон услуг, "Обо мне" и контактов в светлой теме */
 }
 
+/* Фон услуг, "Обо мне" и контактов в темной теме */
 body.dark-theme #services,
 body.dark-theme #about,
 body.dark-theme #contacts,
 body.dark-theme #reviews {
   background-color: #212529 !important;
-  /* Фон услуг, "Обо мне" и контактов в темной теме */
 }
 
 /* Карточки и формы */
-body.light-theme .card.bg-secondary,
+/* Черный текст для читаемости */
+body.light-theme .card,
 body.light-theme .modal-content,
-body.light-theme .form-control.bg-secondary,
-body.light-theme #reviewsCarousel {
+body.light-theme .btn-close.btn,
+body.light-theme .about-text,
+body.light-theme #reviewsCarousel,
+body.light-theme .form-control{
   background-color: #e9ecef !important;
   color: #212529 !important;
-  /* Черный текст для читаемости */
 }
 
-body.dark-theme .card.bg-secondary,
+/* Белый текст для темной темы */
+body.dark-theme .card,
 body.dark-theme .modal-content,
 body.dark-theme .btn-close.btn,
-body.dark-theme .form-control.bg-secondary {
-  background-color: #6c757d !important;
+body.dark-theme .about-text,
+body.dark-theme #reviewsCarousel,
+body.dark-theme .form-control {
+  background: linear-gradient(to bottom right, #343a40, #212529) !important;
+  /* background-color: #6c757d !important; */
   color: #ffffff !important;
-  /* Белый текст для темной темы */
 }
 
 body.light-theme .card.bg-dark {
@@ -332,8 +337,8 @@ a {
   height: 200px;
   object-fit: cover;
 }
-.footer {
-  background-color: #343a40;
-  color: white;
-  padding: 40px 0;
+.navbar {
+  position: relative;
 }
+
+
