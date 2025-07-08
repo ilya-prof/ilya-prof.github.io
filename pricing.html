@@ -21,15 +21,44 @@
 <body class="dark-theme">
     <!-- Хедер -->
     <header class="fixed-top bg-dark bg-opacity-75">
-        <nav class="container py-1 d-flex justify-content-between align-items-center">
-            <ul class="nav">
-                <li class="nav-item"><a href="index.html" class="nav-link">Главная</a></li>
-                <li class="nav-item"><a href="pricing.html" class="nav-link">Прайс</a></li>
-                <li class="nav-item"><a href="pay.html" class="nav-link">Оплата</a></li>
-                <li class="nav-item"><a href="portfolio.html" class="nav-link">Портфолио</a></li>
-            </ul>
-            <button id="theme-switch" class="btn btn-link fs-3">🌙</button>
-        </nav>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+            <div class="container">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Главная</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pricing.html" class="nav-link">Прайс</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pay.html" class="nav-link">Оплата</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#contacts" class="nav-link">Контакты</a>
+                  </li>
+                </ul>
+              </div>
+              <button
+                id="theme-switch"
+                class="btn btn-link"
+                style="font-size: 1.5rem"
+              >
+                🌙
+              </button>
+            </div>
+          </nav>
     </header>
 
     <!-- Основной контент -->
