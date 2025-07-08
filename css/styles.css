@@ -1,3 +1,6 @@
+body {
+  overflow-x: hidden;
+}
 body.light-theme {
   background-color: #f2f1f1 !important;
   /* Основной фон для светлой темы */
@@ -132,7 +135,16 @@ body.dark-theme #contacts a {
   color: #66b0ff !important;
   /* Светло-синий в темной теме */
 }
+#theme-switch {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
 
+.navbar {
+  position: relative;
+}
 /* Карусель */
 body.light-theme .carousel-control-prev-icon,
 body.light-theme .carousel-control-next-icon {
