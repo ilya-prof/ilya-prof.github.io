@@ -6,7 +6,7 @@ body {
 }
 
 body.light-theme {
-  background-color: #f2f1f1 !important;
+  background-color: #ffffff !important;
   /* Основной фон для светлой темы */
   color: #212529 !important;
   /* Черный текст для светлой темы */
@@ -58,7 +58,7 @@ body.light-theme .btn-close.btn,
 body.light-theme .about-text,
 body.light-theme #reviewsCarousel,
 body.light-theme .form-control{
-  background-color: #e9ecef !important;
+  background: linear-gradient(to bottom right, #f8f9fa, #e9ecef) !important;
   color: #212529 !important;
 }
 
