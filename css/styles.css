@@ -24,12 +24,12 @@ body.dark-theme {
 }
 
 /* Переопределение фона секций */
-body.light-theme #hero {
+body.light-theme #hero .text-center {
   background: linear-gradient(to bottom right, #f8f9fa, #e9ecef) !important;
   /* Hero в светлой теме */
 }
 
-body.dark-theme #hero {
+body.dark-theme #hero .text-center {
   background: linear-gradient(to bottom right, #343a40, #212529) !important;
   /* Hero в темной теме */
 }
@@ -145,11 +145,6 @@ body.dark-theme .carousel-control-prev-icon,
 body.dark-theme .carousel-control-next-icon {
   filter: none;
   /* Белые стрелки в темной теме */
-}
-
-/* Параллакс для Hero */
-#hero {
-  background-attachment: fixed;
 }
 
 /* Ховер-эффект для карточек */
