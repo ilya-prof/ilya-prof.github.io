@@ -1,6 +1,7 @@
 body {
   overflow-x: hidden;
 }
+
 body.light-theme {
   background-color: #f2f1f1 !important;
   /* Основной фон для светлой темы */
