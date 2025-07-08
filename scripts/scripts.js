@@ -1,7 +1,7 @@
 // Инициализация AOS
 AOS.init({
     duration: 1000,
-    once: false,
+    once: true,
 });
 
 // Функция для применения темы
