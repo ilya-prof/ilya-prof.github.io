@@ -19,16 +19,6 @@ body.dark-theme {
   /* Белый текст для темной темы */
 }
 
-body.light-theme header {
-  background-color: rgba(255, 255, 255, 0.8) !important;
-  /* Хедер в светлой теме */
-}
-
-body.dark-theme header {
-  background-color: rgba(33, 37, 41, 0.75) !important;
-  /* Хедер в темной теме */
-}
-
 .form-control::placeholder {
   color: #f6f7f9;
 }
@@ -80,7 +70,6 @@ body.dark-theme .about-text,
 body.dark-theme #reviewsCarousel,
 body.dark-theme .form-control {
   background: linear-gradient(to bottom right, #343a40, #212529) !important;
-  /* background-color: #6c757d !important; */
   color: #ffffff !important;
 }
 
