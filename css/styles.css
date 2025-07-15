@@ -126,25 +126,11 @@ a:hover {
   cursor: url(/pic/push.png), auto;
 }
 
-.payment-grid {
-  display: grid;
-  /* grid-template-columns: 1fr; */
-  gap: 3rem;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-@media (min-width: 768px) {
-  .payment-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
 .payment-card {
   background-color: var(--bs-gray-800);
   border-radius: 0.5rem;
   padding: 1.5rem;
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
   transition: transform 1s ease-in-out;
   text-align: center;
 }
