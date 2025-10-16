@@ -69,6 +69,36 @@ form.addEventListener('submit', async (e) => {
     }
 });
 
+// Функция для показа деталей услуги в модальном окне
+function showServiceDetails(title, content) {
+  const modalTitle = document.getElementById('modalTitle');
+  const modalBody = document.getElementById('modalBody');
+  const modal = new bootstrap.Modal(document.getElementById('serviceModal'));
+
+  modalTitle.textContent = title;
+  modalBody.innerHTML = content;
+  modal.show();
+}
+
+// Функция для закрытия модального окна
+function closeModal() {
+  const modalElement = document.getElementById('serviceModal');
+  const modal = bootstrap.Modal.getInstance(modalElement);
+  if (modal) {
+    modal.hide();
+  }
+  // Удаляем backdrop и восстанавливаем прокрутку
+  setTimeout(() => {
+    document.body.classList.remove('modal-open');
+    document.body.style.overflow = '';
+    document.body.style.paddingRight = '';
+    const backdrop = document.querySelector('.modal-backdrop');
+    if (backdrop) {
+      backdrop.remove();
+    }
+  }, 300);
+}
+
 // Модальное окно для отображения деталей услуг
 const serviceCards = document.querySelectorAll('#services .card');
 const modalTitle = document.getElementById('modalTitle');

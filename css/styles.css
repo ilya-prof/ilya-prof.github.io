@@ -234,3 +234,55 @@ a:hover {
   object-fit: cover;
 }
 
+/* Стили для кнопок информации в карточках услуг */
+.btn-outline-primary.btn-sm {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 1;
+  color: #0d6efd;
+  border: 1px solid #0d6efd;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 10;
+}
+
+.btn-outline-primary.btn-sm:hover {
+  color: #fff;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+/* Медиа-запросы для экранов md и выше */
+@media (min-width: 768px) {
+  .display-4 {
+    font-size: 2.5rem; /* Уменьшаем с 3.5rem */
+  }
+  .display-5 {
+    font-size: 2rem; /* Уменьшаем с 3rem */
+  }
+  .card {
+    font-size: 0.9rem; /* Уменьшаем шрифт в карточках */
+  }
+  .card-title {
+    font-size: 1.1rem; /* Уменьшаем заголовки карточек */
+  }
+  .btn {
+    font-size: 0.9rem; /* Уменьшаем кнопки */
+    padding: 0.5rem 1rem; /* Уменьшаем padding */
+  }
+  .container {
+    max-width: 90%; /* Уменьшаем ширину контейнера */
+  }
+  .payment-card {
+    padding: 1rem; /* Уменьшаем padding в платежных карточках */
+  }
+  .payment-card h3 {
+    font-size: 1.5rem; /* Уменьшаем заголовки */
+  }
+}
+
