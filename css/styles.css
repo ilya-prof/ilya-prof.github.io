@@ -258,31 +258,5 @@ a:hover {
 }
 
 /* Медиа-запросы для экранов md и выше */
-@media (min-width: 768px) {
-  .display-4 {
-    font-size: 2.5rem; /* Уменьшаем с 3.5rem */
-  }
-  .display-5 {
-    font-size: 2rem; /* Уменьшаем с 3rem */
-  }
-  .card {
-    font-size: 0.9rem; /* Уменьшаем шрифт в карточках */
-  }
-  .card-title {
-    font-size: 1.1rem; /* Уменьшаем заголовки карточек */
-  }
-  .btn {
-    font-size: 0.9rem; /* Уменьшаем кнопки */
-    padding: 0.5rem 1rem; /* Уменьшаем padding */
-  }
-  .container {
-    max-width: 90%; /* Уменьшаем ширину контейнера */
-  }
-  .payment-card {
-    padding: 1rem; /* Уменьшаем padding в платежных карточках */
-  }
-  .payment-card h3 {
-    font-size: 1.5rem; /* Уменьшаем заголовки */
-  }
-}
+
 
