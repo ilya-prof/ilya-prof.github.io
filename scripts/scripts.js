@@ -87,16 +87,6 @@ function closeModal() {
   if (modal) {
     modal.hide();
   }
-  // Удаляем backdrop и восстанавливаем прокрутку
-  setTimeout(() => {
-    document.body.classList.remove('modal-open');
-    document.body.style.overflow = '';
-    document.body.style.paddingRight = '';
-    const backdrop = document.querySelector('.modal-backdrop');
-    if (backdrop) {
-      backdrop.remove();
-    }
-  }, 300);
 }
 
 // Модальное окно для отображения деталей услуг
